@@ -9,11 +9,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define QWERTY 0
+#define COLEMK 0
 #define GAMING 1
 #define NUMPAD 2
 #define NUMROW 3
-#define ADJUST 4
+#define ARROW 4
 #define CONFIG 5
 
 / {
@@ -21,12 +21,12 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        label = "QWERTY";
+                        label = "COLEMK";
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I    &kp O   &kp P    &kp BKSP
-   &kp LALT  &kp A &kp S &kp D &kp F &kp G    &kp H &kp J &kp K    &kp L   &kp QUOT &kp ENTER
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M &kp CMMA &kp DOT &kp FSLH &kp RSFT
-              &kp LGUI &kp LCTL &mo NUMROW    &kp SPC &mo ADJUST &kp F13
+   &kp TAB   &kp Q &kp W &kp F &kp P &kp B    &kp J &kp L &kp U    &kp Y   &kp $    &kp ENTER
+   &kp BSPC  &kp A &kp R &kp S &kp T &kp G    &kp M &kp N &kp E    &kp O   &kp I    &kp DEL
+   &kp LSHFT &kp Z &kp X &kp C &kp D &kp V    &kp K &kp H &kp CMMA &kp DOT &kp BSLH &kp ESC
+              &kp LGUI &kp LCTL &mo NUMPAD    &lt ARROW SPC &kp RSHFT &mo ADJUST
                         >;
                 };
 
@@ -43,10 +43,10 @@
                 numpad_layer {
                         label = "NUMPAD";
                         bindings = < 
-   &kp TAB     &none &none &none &none &none    &kp KP_EQUAL    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &kp BSPC
-   &kp KP_NLCK &none &none &none &none &none    &kp KP_ASTERISK &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS  &none
-   &tog NUMPAD &none &none &none &none &none    &kp KP_SLASH    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_ENTER &none
-              &mo CONFIG &kp LCTL &mo NUMROW    &kp SPC &kp KP_N0 &kp KP_DOT
+   &kp GRAVE &kp COLON &kp LBRC  &kp RBRC  &kp MINUS &kp EXCL           &kp AT    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp HASH  &none
+   &none     &kp EQUAL &kp UNDER &kp CARET &kp LPAR  &kb RPAR           &kp AMPS  &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp N0    &none
+   &kp APOS  &kp SEMI  &kp RBKT  &kp RBKT  &kp PLUS  &kp ASTRK          &kp PRCNT &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp FSLH  &none
+                                        &none  &kp LCTL  &none          &kp SPC   &kp LSHFT &none
                         >;
                 };
 
@@ -61,12 +61,12 @@
                 };
 
                 adjust_layer {
-                        label = "ADJUST";
+                        label = "ARROW";
                         bindings = <
-   &kp F1      &kp F2  &kp F3   &kp F4    &kp F5 &kp F6    &kp F7   &kp F8   &kp F9 &kp F10   &kp F11 &kp F12
-   &kp CAPS    &kp INS &kp HOME &kp PG_UP &none  &none     &kp LEFT &kp DOWN &kp UP &kp RIGHT &none   &none
-   &tog NUMPAD &kp DEL &kp END  &kp PG_DN &none  &none     &none    &none    &none  &none     &none   &none
-                           &kp LGUI &kp LCTL &mo NUMROW    &kp SPC &mo ADJUST &tog GAMING
+   &none   &none  &none  &none &none  &none             &none     &kp PG_UP &kp UP   &kp PG_DN &none   &none
+   &none   &none  &none  &none &none  &none             &none     &kp LEFT  &kp DOWN &kp RIGHT &none   &none
+   &none   &none  &none  &none &none  &none             &none     &kp HOME  &none    &kp END   &none   &none
+               &kp LGUI &kp LCTL &mo CONFIG             &mo ARROW &none  &none
                         >;
                 };
 
