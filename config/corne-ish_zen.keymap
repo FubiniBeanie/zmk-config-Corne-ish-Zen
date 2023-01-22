@@ -13,7 +13,7 @@
         keymap {
                 compatible = "zmk,keymap";
                 default_layer {
-                        label = "QWERTY";
+                        label = "COLEMAK";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  F  |  P  |  B  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  M  |  1   |  2  |  L  |  ;  |  '   |
@@ -21,10 +21,10 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
                         
-   &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L &kp U   &kp Y    &kp DLLR  &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp N1 &kp N2 &kp N3 &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+   &kp TAB   &kp Q &kp W &kp F &kp P &kp B    &kp J &kp L &kp U    &kp Y   &kp $    &kp ENTER
+   &kp BSPC  &kp A &kp R &kp S &kp T &kp G    &kp M &kp N &kp E    &kp O   &kp I    &kp DEL
+   &kp LSHFT &kp Z &kp X &kp C &kp D &kp V    &kp K &kp H &kp CMMA &kp DOT &kp BSLH &kp ESC
+                   &kp LGUI &kp LCTL &mo 1    &lt 2 SPC  &kp RSHFT &mo 3
                         >;
                 };
                 lower_layer {
