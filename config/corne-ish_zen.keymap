@@ -65,7 +65,7 @@
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B        &kp J &kp L &kp U    &kp Y   &kp DLLR    &kp ENTER
    &kp BSPC  &kp A &kp R &kp S &kp T &kp G        &kp M &kp N &kp E    &kp O   &kp I       &kp DEL
    &kp LSHFT &kp Z &kp X &kp C &kp D &kp V        &kp K &kp H &kp CMMA &kp DOT &kp BSLH    &kp ESC
-                  &kp LGUI &kp LALT  &mo 1        &lt 4 SPC &kp RSHFT  &tog 0
+                  &kp LGUI &kp LALT  &mo 1        &lt 4 SPC &kp RSHFT  &tog 3
                         >;
                 };    
                 arrowIOS_layer {
