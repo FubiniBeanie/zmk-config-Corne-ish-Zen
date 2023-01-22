@@ -35,7 +35,7 @@
 //                    | GUI |     | SPC |   | ENT |      | ALT |
                         bindings = <
    &kp GRAVE &kp COLON &kp LBRC  &kp RBRC  &kp MINUS &kp EXCL           &kp AT    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp HASH  &none
-   &none     &kp EQUAL &kp UNDER &kp CARET &kp LPAR  &kb RPAR           &kp AMPS  &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp N0    &none
+   &none     &kp EQUAL &kp UNDER &kp CARET &kp LPAR  &kp  RPAR           &kp AMPS  &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp N0    &none
    &kp APOS  &kp SEMI  &kp RBKT  &kp RBKT  &kp PLUS  &kp ASTRK          &kp PRCNT &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp FSLH  &none
                           	        &trans  &trans  &trans          &trans  &trans   &trans
                         >;
