@@ -13,12 +13,12 @@
         keymap {
                 compatible = "zmk,keymap";
                 default_layer {
-                        label = "WINDOW";
+                        label = "Window";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  F  |  P  |  B  |       |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |       |  M  |  1   |  2  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |       |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | CTRL| NUM |       | SPC | SHFT | ALT |
+// |  TAB |  Q  |  W  |  F  |  P  |  B  |       |  J  |  L  |  U  |  Y  |  $  | ENTR |
+// | CTRL |  A  |  R  |  S  |  T  |  G  |       |  M  |  N  |  E  |  O  |  I  | DEL  |
+// | SHFT |  Z  |  X  |  C  |  D  |  V  |       |  K  |  H  |  ,  |  .  |  \  | ESC  |
+//                    | GUI | CTRL| NUM |       | SPC | SHFT |APPLE|
                         bindings = <
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B        &kp J &kp L &kp U    &kp Y   &kp DLLR    &kp ENTER
    &kp BSPC  &kp A &kp R &kp S &kp T &kp G        &kp M &kp N &kp E    &kp O   &kp I       &kp DEL
@@ -55,12 +55,12 @@
                         >;
                 };
                 IOS_layer {
-                        label = "APPLE";
+                        label = "Apple";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  F  |  P  |  B  |       |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |       |  M  |  1   |  2  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |       |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | ALT | NUM |       | SPC | SHFT | CRT |
+// |  TAB |  Q  |  W  |  F  |  P  |  B  |       |  J  |  L  |  U  |  Y  |  $  | ENTR |
+// | CTRL |  A  |  R  |  S  |  T  |  G  |       |  M  |  N  |  E  |  O  |  I  | DEL  |
+// | SHFT |  Z  |  X  |  C  |  D  |  V  |       |  K  |  H  |  ,  |  .  |  \  | ESC  |
+//                    | GUI | ALT | NUM |       | SPC | SHFT|WINDO|
                         bindings = <
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B        &kp J &kp L &kp U    &kp Y   &kp DLLR    &kp ENTER
    &kp BSPC  &kp A &kp R &kp S &kp T &kp G        &kp M &kp N &kp E    &kp O   &kp I       &kp DEL
